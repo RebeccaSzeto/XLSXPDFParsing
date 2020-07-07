@@ -145,6 +145,6 @@ XLSX.writeFileAsync(fileName, wb, function(err, success) {
 });
 
 
-app.listen(port, () => console.log(`Hubdoc Intake listening on port ${port}!`))
+app.listen(port, () => console.log(`Listening on ${port}!`))
 
 module.exports = app;
