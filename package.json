@@ -1,16 +1,29 @@
 {
   "name": "excel-prac",
   "version": "1.0.0",
-  "description": "Practising changing the format of an excel",
+  "description": "Practising changing the format of an excel and pdf parsing",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test mocha test/index.test.js"
   },
   "author": "Rebecca",
   "license": "ISC",
   "dependencies": {
+    "@azure/storage-file-share": "^12.1.2",
+    "azure-storage": "^2.10.3",
+    "dotenv": "^8.2.0",
     "fs": "0.0.1-security",
-    "xlsx": "^0.16.0"
+    "xlsx": "^0.16.0",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "path": "^0.12.7",
+    "pdf-parse": "^1.1.1",
+    "uuid": "^8.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.0.1"
   }
 }
